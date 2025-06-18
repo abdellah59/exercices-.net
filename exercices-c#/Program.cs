@@ -43,19 +43,31 @@
 
 //exercice 3. Créer un programme qui affiche "Vous êtes mineur" si l’âge est inférieur à 18.
 
-Console.WriteLine("Saisissez votre age :");
-int nombre = Convert.ToInt32(Console.ReadLine());
+//Console.WriteLine("Saisissez votre age :");
+//int nombre = Convert.ToInt32(Console.ReadLine());
 
-if (nombre < 18)
+//if (nombre < 18)
+//{
+//    Console.WriteLine("Vous êtes mineur");
+//}
+//else
+//{
+//    Console.WriteLine("Vous êtes majeur");
+//}
+
+//exercice 4. Écrire un programme qui vérifie si une chaîne de caractères est vide ou non.
+
+string mot = " ";
+
+if (mot == "")
 {
-    Console.WriteLine("Vous êtes mineur");
-}
-else
+    Console.WriteLine("chaine de caractère vide");
+} else
 {
-    Console.WriteLine("Vous êtes majeur");
+    Console.WriteLine("chaine de caractère non vide");
 }
 
-
+    
 
 
 
