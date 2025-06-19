@@ -180,7 +180,7 @@ else
 // Exercice 12. Demander à l'utilisateur un âge et afficher s'il est un enfant (moins de 12 ans), un adolescent (entre 12 et 18 ans) ou un adulte (plus de 18 ans).
 
 
-Console.WriteLine("Saisissez votre age :");
+/*Console.WriteLine("Saisissez votre age :");
 int age = Convert.ToInt32(Console.ReadLine());
 
 if (age <= 12)
@@ -192,7 +192,26 @@ if (age <= 12)
 } else
 {
     Console.WriteLine("Vous êtes un adulte");
-};
+};*/
+
+
+// Exercice 13. Créer un programme qui vérifie si une année est bissextile ou non.
+
+int annee;
+Console.WriteLine("Saisissez une année :");
+annee = int.Parse(Console.ReadLine());
+
+if (annee % 4 == 0 && annee % 100 != 0 || annee % 400 == 0)
+{
+    Console.WriteLine("L'année est bissextile");
+}
+else
+{
+    Console.WriteLine("L'année n'est pas bissextile");
+}
+
+
+
 
 
 
