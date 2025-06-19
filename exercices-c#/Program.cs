@@ -70,7 +70,8 @@
 
 // exercice 5. Vérifier si un nombre est pair ou impair.
 
-Console.WriteLine("Saisissez un nombre");
+
+/*Console.WriteLine("Saisissez un nombre");
 int nombre = Convert.ToInt32(Console.ReadLine());
 
 if (nombre % 2 == 0)
@@ -80,7 +81,27 @@ if (nombre % 2 == 0)
 else
 {
     Console.WriteLine("Le nombre est impair");
+};*/
+
+// exercice 6. Écrire un programme qui compare deux nombres et affiche le plus grand.
+
+Console.WriteLine("Saisissez le nombre 1");
+int nombre1 = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Saisissez le nombre 2"); 
+int nombre2 = Convert.ToInt32(Console.ReadLine());
+
+if (nombre1 > nombre2)
+{
+    Console.WriteLine("Le nombre 1 est supérieur au nombre 2");
 }
+else
+{
+    Console.WriteLine("Le nombre 2 est supérieur au nombre 1");
+};
+
+
+
+
 
 
 
