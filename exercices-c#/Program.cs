@@ -83,7 +83,7 @@ else
     Console.WriteLine("Le nombre est impair");
 };*/
 
-// exercice 6. Écrire un programme qui compare deux nombres et affiche le plus grand.
+/* exercice 6. Écrire un programme qui compare deux nombres et affiche le plus grand.
 
 Console.WriteLine("Saisissez le nombre 1");
 int nombre1 = Convert.ToInt32(Console.ReadLine());
@@ -98,6 +98,27 @@ else
 {
     Console.WriteLine("Le nombre 2 est supérieur au nombre 1");
 };
+*/
+
+//exercice 7 : Vérifier si un nombre est divisible par 3 ou par 5.
+
+Console.WriteLine("Saisissez un nombre");
+int nombre = Convert.ToInt32(Console.ReadLine());
+
+if (nombre % 3 == 0)
+{
+    Console.WriteLine("Le nombre est divisible par 3 ou 5");
+
+} else if ( nombre % 5 == 0)
+{
+    Console.WriteLine("Le nombre est divisible par 5");
+}
+else
+{
+    Console.WriteLine("Le nombre n'est pas divisible par 3 ou 5");
+};
+
+
 
 
 
