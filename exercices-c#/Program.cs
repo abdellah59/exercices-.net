@@ -242,9 +242,7 @@ else
 
 // exercice 16. Vérifier si un nombre est divisible à la fois par 2 et par 3, mais pas par 9.
 
-using System.Formats.Asn1;
-
-int nombre;
+/*int nombre;
 Console.WriteLine("Saisissez un nombre :");
 nombre = int.Parse(Console.ReadLine());
 
@@ -255,8 +253,50 @@ if (nombre % 2 == 0 && nombre % 3 == 0 && nombre % 9 != 0)
 {
     Console.WriteLine("le nombre saisi ne rempli pas les conditions");
 };
+*/
 
+// Exercice 17.  Demander à l'utilisateur un nom d'utilisateur et un mot de passe, et vérifier si les deux sont corrects.
+/*String username = "admin";
+string password = "1234";
 
+Console.WriteLine("Saisissez votre identifiant");
+string saisieUsername = Console.ReadLine();
+Console.WriteLine("Saisissez votre mot de passe");
+string saisiePassword = Console.ReadLine();
+
+if (saisieUsername == username && saisiePassword == password)
+{
+    Console.ForegroundColor = ConsoleColor.Green;
+    Console.WriteLine("Connexion réussie");
+}
+else
+{
+    Console.ForegroundColor = ConsoleColor.Red;
+    Console.WriteLine("Identifiant ou mot de passe incorrect");
+}
+Console.ResetColor();*/
+
+// Exercice 18. Écrire un programme qui affiche "Excellent" si la note est supérieure à 85,
+// "Bien" si elle est entre 70 et 85,sinon afficher "Peut mieux faire".
+
+// Exercice 19. Créer un programme qui vérifie si une chaîne de caractères est un palindrome.
+
+string texte;
+Console.WriteLine("Saisissez un mot :");
+texte = Console.ReadLine();
+
+char[] caracteres = texte.ToCharArray();
+Array.Reverse(caracteres);
+string texteInverse = new string(caracteres);
+
+if (texte == texteInverse)
+{
+    Console.WriteLine($"'{texte}' est un palindrome");
+}
+else
+{
+    Console.WriteLine($"'{texte}' n'est pas un palindrome");
+};
 
 
 
