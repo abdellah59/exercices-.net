@@ -138,14 +138,33 @@ else
 
 /*string lettre;
 Console.WriteLine("Saisissez une lettre");
+lettre = Console.ReadLine();
 
-switch */
+switch (lettre)
+{
+    case "a":
+    case "A":
+    case "e":
+    case "E":
+    case "i":
+    case "I":
+    case "o":
+    case "O":
+    case "u":
+    case "U":
+        Console.WriteLine("C'est une voyelle");
+        break;
+    default:
+        Console.WriteLine("C'est une consonne");
+        break;
+};
+*/
 
 // 2. Condition imbriquées : 
 
 // 11.Écrire un programme qui vérifie si un nombre est compris entre 10 et 20.
 
-Console.WriteLine("Saisissez un nombre :");
+/*Console.WriteLine("Saisissez un nombre :");
 int nombre = Convert.ToInt32(Console.ReadLine());
 
 if (nombre >= 10 && nombre <= 20)
@@ -155,12 +174,25 @@ if (nombre >= 10 && nombre <= 20)
 else
 {
     Console.WriteLine("Le nombre n'est pas compris entre 10 et 20");
-}
+}*/
 
 
+// Exercice 12. Demander à l'utilisateur un âge et afficher s'il est un enfant (moins de 12 ans), un adolescent (entre 12 et 18 ans) ou un adulte (plus de 18 ans).
 
 
+Console.WriteLine("Saisissez votre age :");
+int age = Convert.ToInt32(Console.ReadLine());
 
+if (age <= 12)
+{
+    Console.WriteLine("Vous êtes un enfant");
+} else if (age < 18)
+{
+    Console.WriteLine("Vous êtes un adolescent");
+} else
+{
+    Console.WriteLine("Vous êtes un adulte");
+};
 
 
 
