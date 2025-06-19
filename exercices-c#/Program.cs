@@ -1,10 +1,10 @@
-﻿// exercice 1 :  Écrire un programme qui vérifie si un nombre donné est supérieur à 10.
+﻿// 1.Conditions simples
 
 
+// exercice 1 :  Écrire un programme qui vérifie si un nombre donné est supérieur à 10.
 
 //Console.WriteLine("Saisissez un nombre : ");
 //int nombre = Convert.ToInt32(Console.ReadLine());
-
 
 //if (nombre < 10)
 //{
@@ -118,12 +118,12 @@ else
 */
 
 //exercice 8. Demander à l'utilisateur un mot de passe et vérifier s'il correspond à "admin".
-
+/*
 string mdp = "admin";
 Console.WriteLine("Saisissez le mot de passe");
 string saisi = Console.ReadLine();
 
-if ( mdp != saisi)
+if (mdp != saisi)
 {
     Console.WriteLine("Le mot de passe est incorrect");
 
@@ -132,7 +132,35 @@ else
 {
     Console.WriteLine("Le mot de passe est correct");
 }
-;
+;*/
+
+// exercice 9 : Créer un programme qui vérifie si une lettre est une voyelle ou une consonne.
+
+/*string lettre;
+Console.WriteLine("Saisissez une lettre");
+
+switch */
+
+// 2. Condition imbriquées : 
+
+// 11.Écrire un programme qui vérifie si un nombre est compris entre 10 et 20.
+
+Console.WriteLine("Saisissez un nombre :");
+int nombre = Convert.ToInt32(Console.ReadLine());
+
+if (nombre >= 10 && nombre <= 20)
+{
+    Console.WriteLine("Le nombre est compris entre 10 et 20");
+}
+else
+{
+    Console.WriteLine("Le nombre n'est pas compris entre 10 et 20");
+}
+
+
+
+
+
 
 
 
