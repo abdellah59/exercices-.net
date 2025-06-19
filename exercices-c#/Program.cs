@@ -57,17 +57,34 @@
 
 //exercice 4. Écrire un programme qui vérifie si une chaîne de caractères est vide ou non.
 
-string mot = " ";
+//string mot = " ";
 
-if (mot == "")
+//if (mot == "")
+//{
+//    Console.WriteLine("chaine de caractère vide");
+//} else
+//{
+//    Console.WriteLine("chaine de caractère non vide");
+//}
+
+
+// exercice 5. Vérifier si un nombre est pair ou impair.
+
+Console.WriteLine("Saisissez un nombre");
+int nombre = Convert.ToInt32(Console.ReadLine());
+
+if (nombre % 2 == 0)
 {
-    Console.WriteLine("chaine de caractère vide");
-} else
+    Console.WriteLine("Le nombre est pair");
+}
+else
 {
-    Console.WriteLine("chaine de caractère non vide");
+    Console.WriteLine("Le nombre est impair");
 }
 
-    
+
+
+
 
 
 
