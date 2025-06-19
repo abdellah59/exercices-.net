@@ -1,6 +1,4 @@
-﻿
-
-// exercice 1 :  Écrire un programme qui vérifie si un nombre donné est supérieur à 10.
+﻿// exercice 1 :  Écrire un programme qui vérifie si un nombre donné est supérieur à 10.
 
 
 
@@ -102,7 +100,7 @@ else
 
 //exercice 7 : Vérifier si un nombre est divisible par 3 ou par 5.
 
-Console.WriteLine("Saisissez un nombre");
+/*Console.WriteLine("Saisissez un nombre");
 int nombre = Convert.ToInt32(Console.ReadLine());
 
 if (nombre % 3 == 0)
@@ -117,6 +115,25 @@ else
 {
     Console.WriteLine("Le nombre n'est pas divisible par 3 ou 5");
 };
+*/
+
+//exercice 8. Demander à l'utilisateur un mot de passe et vérifier s'il correspond à "admin".
+
+string mdp = "admin";
+Console.WriteLine("Saisissez le mot de passe");
+string saisi = Console.ReadLine();
+
+if ( mdp != saisi)
+{
+    Console.WriteLine("Le mot de passe est incorrect");
+
+}
+else
+{
+    Console.WriteLine("Le mot de passe est correct");
+}
+;
+
 
 
 
