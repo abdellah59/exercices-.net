@@ -212,7 +212,7 @@ else
 
 // Exercice 14. Vérifier si un nombre est positif et multiple de 5.
 
-int nombre;
+/*int nombre;
 Console.WriteLine("Saisissez un nombre :");
 nombre = int.Parse(Console.ReadLine());
 
@@ -222,9 +222,39 @@ if (nombre % 5 == 0 && nombre > 0)
 } else
 {
     Console.WriteLine("le nombre n'est ni positifi ni un multiple de 5");
+};*/
+
+// exercice 15. Écrire un programme qui vérifie si une chaîne de caractères contient la lettre 'a'.
+
+/*string texte;
+Console.WriteLine("Saisissez un mot ou une phrase :");
+texte = Console.ReadLine();
+
+if (texte.Contains("a"))
+{
+    Console.WriteLine("Le texte contient la lettre 'a'");
+}
+else
+{
+    Console.WriteLine("Le texte ne contient pas la lettre 'a'");
+}*/
+
+
+// exercice 16. Vérifier si un nombre est divisible à la fois par 2 et par 3, mais pas par 9.
+
+using System.Formats.Asn1;
+
+int nombre;
+Console.WriteLine("Saisissez un nombre :");
+nombre = int.Parse(Console.ReadLine());
+
+if (nombre % 2 == 0 && nombre % 3 == 0 && nombre % 9 != 0)
+{
+    Console.WriteLine("le nombre est divisible à la fois par 2 et par 3, mais pas par 9");
+} else
+{
+    Console.WriteLine("le nombre saisi ne rempli pas les conditions");
 };
-
-
 
 
 
