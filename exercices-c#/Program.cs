@@ -197,7 +197,7 @@ if (age <= 12)
 
 // Exercice 13. Créer un programme qui vérifie si une année est bissextile ou non.
 
-int annee;
+/*int annee;
 Console.WriteLine("Saisissez une année :");
 annee = int.Parse(Console.ReadLine());
 
@@ -208,7 +208,21 @@ if (annee % 4 == 0 && annee % 100 != 0 || annee % 400 == 0)
 else
 {
     Console.WriteLine("L'année n'est pas bissextile");
-}
+}*/
+
+// Exercice 14. Vérifier si un nombre est positif et multiple de 5.
+
+int nombre;
+Console.WriteLine("Saisissez un nombre :");
+nombre = int.Parse(Console.ReadLine());
+
+if (nombre % 5 == 0 && nombre > 0)
+{
+    Console.WriteLine("Le nombre est positif et multiple de 5");
+} else
+{
+    Console.WriteLine("le nombre n'est ni positifi ni un multiple de 5");
+};
 
 
 
