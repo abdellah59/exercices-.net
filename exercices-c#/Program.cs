@@ -333,7 +333,7 @@ if (nombre >= 0)
 
 //exercice 21.  Afficher les nombres de 1 à 10 avec une boucle `for`
 
-int nombre;
+/*int nombre;
 Console.WriteLine("Saisissez un nombre");
 nombre = int.Parse(Console.ReadLine());
 
@@ -341,11 +341,58 @@ for (int i = 1; i <= nombre; i++)
 {
     Console.WriteLine(i);
 };
+*/
+
+//exercice 22. Afficher les nombres pairs entre 1 et 20.
+
+/*int nombre;
+Console.WriteLine("Saisissez un nombre");
+nombre = int.Parse(Console.ReadLine());
+
+for (int i = 1; i <= nombre; i++)
+{
+    if (i % 2 == 0)
+    {
+        Console.WriteLine(i);
+    };
+};*/
+
+// Exercice 22.  Utiliser une boucle pour afficher chaque élément d'un tableau.
+
+/*int [];
+
+for (i = 0; i  */
 
 
+// Exercice 31 . Utiliser une boucle `while` pour afficher les nombres de 1 à 10.
 
+/*int i = 1;
+int nombre;
+Console.WriteLine("Saisissez un nombre :");
+nombre = int.Parse(Console.ReadLine());
 
+while (i <= nombre)
+{
+    
+    Console.WriteLine(i);
+    i++; 
 
+};*/
+
+// Exercice 32. Utiliser une boucle `while` pour calculer la somme des nombres de 1 à 100.
+
+/*int i = 1;
+int nombre;
+Console.WriteLine("Saisissez un nombre :");
+nombre = int.Parse(Console.ReadLine());
+
+while (i <= nombre)
+{
+    int somme = i + i++;
+    Console.WriteLine(somme);
+};*/
+
+// Exercice 33. Demander à l'utilisateur un nombre et continuer à demander tant que ce nombre est négatif.
 
 
 
