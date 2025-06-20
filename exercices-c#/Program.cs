@@ -281,7 +281,7 @@ Console.ResetColor();*/
 
 // Exercice 19. Créer un programme qui vérifie si une chaîne de caractères est un palindrome.
 
-string texte;
+/*string texte;
 Console.WriteLine("Saisissez un mot :");
 texte = Console.ReadLine();
 
@@ -296,7 +296,53 @@ if (texte == texteInverse)
 else
 {
     Console.WriteLine($"'{texte}' n'est pas un palindrome");
+};*/
+
+// Exercicie 20. Écrire un programme qui vérifie si un nombre est à la fois positif,
+// pair et supérieur à 100.
+
+/*int nombre;
+Console.WriteLine("Saisissez un nombre :");
+nombre = int.Parse(Console.ReadLine());
+
+if (nombre >= 0)
+{
+    Console.WriteLine("Le nombre est positif");
+
+    if (nombre % 2 == 0)
+    {
+        Console.WriteLine("Le nombre est pair");
+    }
+    else
+    {
+        Console.WriteLine("Le nombre est impair");
+    }
+
+    if (nombre > 100)
+    {
+        Console.WriteLine("Le nombre est superieur à 100");
+    }
+    else
+    {
+        Console.WriteLine("Le nombre est inferieur ou égale à 100");
+
+    }
+    ;
 };
+*/
+
+//exercice 21.  Afficher les nombres de 1 à 10 avec une boucle `for`
+
+int nombre;
+Console.WriteLine("Saisissez un nombre");
+nombre = int.Parse(Console.ReadLine());
+
+for (int i = 1; i <= nombre; i++)
+{
+    Console.WriteLine(i);
+};
+
+
 
 
 
