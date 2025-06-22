@@ -1,4 +1,63 @@
-﻿// 1.Conditions simples
+﻿// Exercice Brief :
+
+
+// Exerciice 7: Le nombre mystère
+
+/*Console.WriteLine("--- Trouver le nombre mystère ---");
+
+// Initialiser une variable contenant la fonction Random()
+Random aleatoire = new Random();
+
+// Déclaration des variables nécessaires au jeu
+int nbMystere = aleatoire.Next(1, 51); // Génère un rng entre 1 et 50
+int nombre = 0; // Variable contenant l'entrée utilisateur
+Console.WriteLine(nbMystere); // DEV : Vérifier si le programme fonctionne
+
+// Tant que l'utilisateur n'a pas trouvé le nbMystère, on itère
+while (nombre != nbMystere)
+{
+    // Demander à l'utilisateur de saisir un nombre
+    Console.WriteLine("Veuillez saisir un nombre");
+
+    nombre = Convert.ToInt32(Console.ReadLine());
+    // Si le nombre de l'utilisateur est inférieur au nbMystère
+    if (nombre < nbMystere)
+    {
+        // Afficher une erreur en rouge "le nbMystère est plus grand"
+        Console.ForegroundColor = ConsoleColor.Red;
+        Console.WriteLine("le nombre mystère est plus grand");
+        Console.ResetColor();
+
+    }
+    // Si l'entrée utilisateur est > au nbMystère
+    else if (nombre > nbMystere)
+    {
+        // Ecrire une erreur en rouge "le nbMystère est plus petit"
+        Console.ForegroundColor = ConsoleColor.Red;
+        Console.WriteLine("Le nombre mystère est plus petit");
+        Console.ResetColor();
+
+    }
+    // Sinon, cela veut dire que l'entrée utilisateur est égale au nbMystère
+    else
+    {
+        // On félicite l'utilisateur et à la fin de l'itération, la boucle sera false
+        Console.ForegroundColor = ConsoleColor.Green;
+        Console.WriteLine("Bravo !!!! Vous avez trouver la bonne réponse");
+        Console.ReadLine();
+        Console.ResetColor();
+    }
+}*/
+
+
+
+
+
+
+
+
+
+// 1.Conditions simples
 
 
 // exercice 1 :  Écrire un programme qui vérifie si un nombre donné est supérieur à 10.
@@ -394,6 +453,18 @@ while (i <= nombre)
 
 // Exercice 33. Demander à l'utilisateur un nombre et continuer à demander tant que ce nombre est négatif.
 
+/*int nombre;
+Console.WriteLine("Saisissez un nombre :");
+nombre = int.Parse(Console.ReadLine());
+
+while( nombre < 0)
+{
+
+    Console.WriteLine("Saisissez un nombre :");
+    nombre = int.Parse(Console.ReadLine());
+
+}
+;*/
 
 
 
