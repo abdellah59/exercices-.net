@@ -1,6 +1,5 @@
 ﻿// Exercice Brief :
 
-
 // Exerciice 7: Le nombre mystère
 
 /*Console.WriteLine("--- Trouver le nombre mystère ---");
@@ -49,6 +48,44 @@ while (nombre != nbMystere)
     }
 }*/
 
+// exercice 8 : Quelle taile dois-je prendre ?
+
+Console.WriteLine("--- Quelle taille dois-je prendre ?");
+
+int taille;
+int poids;
+
+Console.Write("Entrez votre taille (en cm) : ");
+taille = Convert.ToInt32(Console.ReadLine());
+
+Console.Write("Entrez votre poids (en kg) : ");
+poids = Convert.ToInt32(Console.ReadLine());
+
+if ((taille >= 145 && taille <= 169 && poids >= 43 && poids <= 47) ||
+    (taille >= 145 && taille <= 166 && poids >= 48 && poids <= 53) ||
+    (taille >= 145 && taille <= 163 && poids >= 54 && poids <= 59) ||
+    (taille >= 145 && taille <= 160 && poids >= 60 && poids <= 65) )
+{
+    Console.WriteLine("Prennez la taille 1.");
+}
+else if ((taille >= 169 && taille <= 178 && poids >= 48 && poids <= 53) ||
+         (taille >= 166 && taille <= 175 && poids >= 54 && poids <= 59) ||
+         (taille >= 163 && taille <= 172 && poids >= 60 && poids <= 65) ||
+         (taille >= 160 && taille <= 169 && poids >= 66 && poids <= 71))
+{
+    Console.WriteLine("Prennez la taile 2");
+}
+else if ((taille >= 172 && taille <= 183 && poids >= 54 && poids <= 59) ||
+         (taille >= 175 && taille <= 183 && poids >= 60 && poids <= 65) ||
+         (taille >= 172 && taille <= 183 && poids >= 66 && poids <= 71) ||
+         (taille >= 163 && taille <= 183 && poids >= 72 && poids <= 77))
+{
+    Console.WriteLine("Prennez la taile 3");
+}
+else
+{
+    Console.WriteLine("Aucune taille ne vous correspond");
+}
 
 
 
