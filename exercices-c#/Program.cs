@@ -708,7 +708,7 @@ for (int i = 0; i < nPrenom; i++)
 
 //exercice 4 :
 
-int choix;
+/*int choix;
 string pays;
 string capitale;
 string paysSaisie;
@@ -784,4 +784,96 @@ do
             break;
     }
 
-} while (choix != 0);
+} while (choix != 0);*/
+
+
+// Exercice 5 : Parcours de collections variées
+
+/*using System.Text;
+
+int[] nombres = new int[5];
+int compteurElement = 0;
+List<string> prenoms = new List<string> { "Bob", "Cedric", "Lucas", "Loic" };
+Dictionary<string, string> paysCapitales = new Dictionary<string, string>
+{
+    ["France"] = "Paris",
+    ["Espagne"] = "Madrid",
+    ["Belgique"] = "Bruxelles"
+};
+
+foreach (int n in nombres)
+{
+    compteurElement++;
+    Console.Write($" {n}");
+}
+;
+
+Console.WriteLine();
+
+int compteurPrenom = 0;
+foreach (string prenom in prenoms)
+{
+    compteurElement++;
+    compteurPrenom++;
+    Console.WriteLine($"{compteurPrenom} : {prenom}");
+}
+;
+
+Console.WriteLine();
+
+foreach (var pair in paysCapitales)
+{
+    compteurElement++;
+    Console.WriteLine($"{pair.Key} : {pair.Value}");
+
+}
+;
+
+Console.WriteLine();
+Console.WriteLine($"Le nombre total d’éléments parcourus : {compteurElement}");
+*/
+
+
+// exercicie 1 : Fonction 
+/*void AfficherSeparateur()
+{
+    Console.WriteLine(new String ('-', 30));
+}
+
+AfficherSeparateur();
+*/
+
+// Exericice 2 : Fonction avec paramètres et retour
+
+//1.
+/*int Additionner(int a, int b)
+{
+    int somme = a + b;
+    return somme ; 
+}
+
+Console.WriteLine(Additionner(5, 5));*/
+
+//2.
+
+/*bool  EstPair(int nombre)
+{
+    if (nombre % 2 == 0)
+    {
+        return true;
+    }
+    else
+    {
+        return false;
+    }
+};
+
+Console.WriteLine(EstPair(8));*/
+
+double CalculerPrixTTC(double prixHT, double tauxTVA = 0.20)
+{
+   double prixTTC = prixHT + (tauxTVA * prixHT);
+   return prixTTC;
+
+}
+Console.WriteLine(CalculerPrixTTC(10));
