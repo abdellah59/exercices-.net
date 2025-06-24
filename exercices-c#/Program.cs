@@ -50,7 +50,7 @@ while (nombre != nbMystere)
 
 // exercice 8 : Quelle taile dois-je prendre ?
 
-Console.WriteLine("--- Quelle taille dois-je prendre ?");
+/*Console.WriteLine("--- Quelle taille dois-je prendre ?");
 
 int taille;
 int poids;
@@ -85,14 +85,139 @@ else if ((taille >= 172 && taille <= 183 && poids >= 54 && poids <= 59) ||
 else
 {
     Console.WriteLine("Aucune taille ne vous correspond");
-}
+}*/
 
+// Exercice 9 : Gestion des notes partie 2
 
+/*int choix;
+double[] notes = new double[100];
+int nombreNotes = 0;
+double somme = 0;
+double grandeNote = 0;
+double petiteNote = 20;
+bool notesExistent = false;
 
+do
+{
+    Console.Clear(); // Ajout pour nettoyer l'écran
+    Console.WriteLine("---   GESTION DES NOTES AVEC MENU   ---");
+    Console.WriteLine("1--- Saisir les notes");
+    Console.WriteLine("2--- Afficher la plus grande note");
+    Console.WriteLine("3--- Afficher la plus petite note");
+    Console.WriteLine("4--- Afficher la moyennes des notes");
+    Console.WriteLine("0--- Quitter le programme");
+    Console.Write("Faites votre choix : ");
 
+    choix = Convert.ToInt32(Console.ReadLine());
 
+    switch (choix)
+    {
+        case 1:
+            Console.WriteLine("=== SAISIE DES NOTES ===");
+            Console.Write("Combien de notes voulez-vous saisir ? ");
+            nombreNotes = Convert.ToInt32(Console.ReadLine());
 
+            somme = 0;
+            grandeNote = 0;
+            petiteNote = 20;
 
+            int compteur = 0;
+            do
+            {
+                Console.Write($"Saisissez la note {compteur + 1} : ");
+                notes[compteur] = Convert.ToDouble(Console.ReadLine()); // Correction: Double au lieu de Int32
+
+                somme = somme + notes[compteur];
+
+                if (notes[compteur] > grandeNote)
+                {
+                    grandeNote = notes[compteur];
+                }
+
+                if (notes[compteur] < petiteNote)
+                {
+                    petiteNote = notes[compteur];
+                }
+
+                compteur++;
+
+            } while (compteur < nombreNotes);
+
+            notesExistent = true;
+            Console.WriteLine("\nNotes saisies avec succès !");
+            Console.WriteLine("Appuyez sur une touche pour continuer...");
+            Console.ReadKey();
+            break;
+
+        case 2:
+            Console.WriteLine("===   La plus grande note  ===");
+
+            if (notesExistent && nombreNotes > 0) // Correction: vérifier si notes existent
+            {
+                Console.WriteLine($"La plus grande note est : {grandeNote:F2}");
+            }
+            else
+            {
+                Console.WriteLine("Aucune note n'a été saisie.");
+                Console.WriteLine("Veuillez d'abord saisir des notes (option 1).");
+            }
+
+            Console.WriteLine("\nAppuyez sur une touche pour continuer...");
+            Console.ReadKey();
+            break;
+
+        case 3:
+            Console.WriteLine("===   La plus petite note  ===");
+
+            if (notesExistent && nombreNotes > 0) // Correction: vérifier si notes existent
+            {
+                Console.WriteLine($"La plus petite note est : {petiteNote:F2}");
+            }
+            else
+            {
+                Console.WriteLine("Aucune note n'a été saisie.");
+                Console.WriteLine("Veuillez d'abord saisir des notes (option 1).");
+            }
+
+            Console.WriteLine("\nAppuyez sur une touche pour continuer...");
+            Console.ReadKey();
+            break;
+
+        case 4:
+            Console.WriteLine("===   La Moyenne des notes   ===");
+
+            if (notesExistent && nombreNotes > 0)
+            {
+                double moyenne = somme / nombreNotes;
+                Console.WriteLine($"Moyenne des notes : {moyenne:F2}");
+            }
+            else
+            {
+                Console.WriteLine("Aucune note n'a été saisie.");
+                Console.WriteLine("Veuillez d'abord saisir des notes (option 1).");
+            }
+
+            Console.WriteLine("\nAppuyez sur une touche pour continuer...");
+            Console.ReadKey();
+            break;
+
+        case 0:
+            Console.Clear();
+            Console.WriteLine("Au revoir !");
+            Environment.Exit(0);
+            break;
+
+        default:
+            Console.Clear();
+            Console.WriteLine("Choix invalide ! Veuillez saisir 1, 2, 3, 4 ou 0.");
+            Console.WriteLine("Appuyez sur une touche pour continuer...");
+            Console.ReadKey();
+            break;
+    }
+
+} while (choix != 0);
+
+*/
 
 // 1.Conditions simples
 
@@ -503,12 +628,160 @@ while( nombre < 0)
 }
 ;*/
 
+// Exercice 7 : Jour de la semaine 
+
+/*Console.WriteLine("Entrez un nombre entre 1 et 7");
+
+int jour;
+jour = int.Parse(Console.ReadLine());
+
+switch (jour)
+{
+    case 1: Console.WriteLine("Lundi"); break;
+    case 2: Console.WriteLine("Mardi"); break;
+    case 3: Console.WriteLine("Mercredi"); break;
+    case 4: Console.WriteLine("Jeudi"); break;
+    case 5: Console.WriteLine("Vendredi"); break;
+    case 6: Console.WriteLine("Samedi"); break;
+    case 7: Console.WriteLine("Dimanche"); break;
+    default: Console.WriteLine("Jour inconnu"); break;
+
+}
+;*/
 
 
 
 
+// Exercice cours  Les Collections en C# : 
+
+// Execice 1 : tableau
+
+/*using System.ComponentModel.Design;
+
+int[] notes = {  };
+double somme = 0;
+
+if (notes.Length > 0)
+{
+
+    for (int i = 0; i < notes.Length; i++)
+    {
+        somme = somme + notes[i];
+        Console.WriteLine(somme);
+        double moyenne = somme / notes.Length;
+        Console.WriteLine(moyenne);
+
+    }
+} else
+{
+
+    Console.WriteLine("Erreur le tabeau des notes est vide ! Veuillez siaisr des notes");
+}
+*/
+
+
+
+// exercice 2 : 
+
+/*int[] notes = { 10, 20 };
+
+Console.WriteLine($"la valeur maximale : {notes.Max()}\n" +
+                  $"la valeur minimal : {notes.Min()}\n" +
+                  $"la moyenne : {notes.Average()}\n" );*/
+
+
+
+// exercice 3 : 
+
+
+/*List<string> prenom = new List<string>();
+
+Console.Write("Saisissez le nombre de prénom : ");
+int nPrenom = Convert.ToInt32(Console.Read());
+
+Console.WriteLine("Saisissez les prénoms :");
+for (int i = 0; i < nPrenom; i++)
+{
+    prenom.Add(Console.ReadLine());
+}
+*/
+
+//exercice 4 :
+
+int choix;
+string pays;
+string capitale;
+string paysSaisie;
+Dictionary<string, string> paysCapitales = new Dictionary<string, string>();
+
+do
+{
+    Console.Clear();
+    Console.WriteLine("---   DICTIONNAIRE COUPLE PAYS / CAPITAL   ---");
+    Console.WriteLine("1. Saisir les coupe Pays / Capitale");
+    Console.WriteLine("2. Rechercher une Capitale");
+    Console.WriteLine("3. Quitter le programme");
+    Console.Write("Faites votre choix : ");
+
+    if (!int.TryParse(Console.ReadLine(), out choix))
+    {
+        Console.WriteLine("Choix invalide ! Veuillez saisir un chiffre entre 1 et 4");
+        Console.ReadKey();
+        continue;
+    }
+
+
+    switch (choix)
+    {
+        case 1:
+            Console.Clear();
+            Console.WriteLine("1. Saisir les couples Pays / Capitale");
+            do
+            {
+                Console.WriteLine("Saisissez le nom du Pays : ");
+                pays = Console.ReadLine();
+
+                Console.WriteLine("Saisissez le nom de la capitale : ");
+                capitale = Console.ReadLine();
+
+                paysCapitales.Add(pays, capitale);
+                Console.WriteLine($"Ajouté : {pays} => {capitale}");
+
+            } while (pays != "fin");
+
+            break;
+
+
+        case 2:
+            Console.Clear();
+            Console.WriteLine("2. Rechercher une Capitale");
+            paysSaisie = Console.ReadLine();
+
+            if (paysCapitales.ContainsKey(paysSaisie))
+            {
+                Console.WriteLine($" La capital de {paysSaisie} est : {paysCapitales[paysSaisie]}");
+            }
+            Console.ReadKey();
+
+            break;
+
+
+        case 3:
+            Console.Clear();
+            Console.WriteLine("Au revoir !");
+            Environment.Exit(0);
+            break;
 
 
 
 
+        default:
+            Console.Clear();
+            Console.WriteLine("Choix invalide ! Veuillez saisir ent 1 et  3");
+            Console.WriteLine("Appuyez sur une touche pour continuer...");
+            Console.ReadKey();
 
+            break;
+    }
+
+} while (choix != 0);
