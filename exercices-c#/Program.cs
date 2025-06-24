@@ -870,10 +870,47 @@ Console.WriteLine(Additionner(5, 5));*/
 
 Console.WriteLine(EstPair(8));*/
 
-double CalculerPrixTTC(double prixHT, double tauxTVA = 0.20)
+//3.
+/*double CalculerPrixTTC(double prixHT, double tauxTVA = 0.20)
 {
    double prixTTC = prixHT + (tauxTVA * prixHT);
    return prixTTC;
 
 }
-Console.WriteLine(CalculerPrixTTC(10));
+Console.WriteLine(CalculerPrixTTC(10));*/
+
+//Exericice : Utiliser la surcharge de fonctions
+class Program
+{
+    static int Multiplier(int a, int b)
+    {
+        return a * b;
+    }
+
+    static int Multiplier(int a, int b, int c)
+    {
+        return a * b * c;
+    }
+
+    static int Multiplier(int[] tableau)
+    {
+        int resultat = 1; 
+
+        foreach(int n in tableau)
+        {
+            resultat = n * resultat;
+        }
+
+        return resultat;
+    }
+
+    static void Main(string[] args)
+    {
+
+        Console.WriteLine(Multiplier(5, 5));
+        Console.WriteLine(Multiplier(2, 3, 4));
+        int[] tableau = new int[] { 2, 3, 4, 5 };
+        Console.WriteLine(Multiplier(tableau));
+
+    }
+}
