@@ -917,7 +917,7 @@ Console.WriteLine(CalculerPrixTTC(10));*/
 
 // Exercice 5 : Static ou instance ?
 
-class Program
+/*class Program
 {
     static void BonjourGlobal()
     {
@@ -937,4 +937,69 @@ class Program
         program.BonjourPersonnalise("Abdell") ;
 
     }
+}*/
+
+
+// Exercice 6 : Fonctions locales en pratique
+
+/*class Program
+{
+    static void AnalyseNombre(int[] tableau)
+    {
+        bool EstPair(int x)
+        {
+            return x % 2 == 0;
+         
+        }
+
+        foreach (int n in tableau)
+        {
+            if (EstPair(n))
+            {
+                Console.WriteLine($"{n} est pair");
+            } else
+            {
+                Console.WriteLine($"{n} est impair");
+            }
+        }
+
+    }
+    static void Main(string[] args)
+    {
+        int[] tableauOriginal = new int[] { 2, 3, 4, 5 };
+       AnalyseNombre(tableauOriginal);
+    }
+}
+*/
+
+// Exercice 7 : Découverte des lambdas
+
+// 1.
+class Program
+{
+    static void Main(string[] args)
+    {
+        Func<int, int> triple = x => x * 3;
+        Console.WriteLine(triple(10));
+    }
+
+
+}
+
+//2. 
+class Program
+{
+    static void Main(string[] args)
+    {
+
+        List<int> nombre = new List<int> { 1, 2, 3, 4, 5,6,7,8,9 };
+
+        nombre.RemoveAll(x => x % 2 != 0);
+
+        Console.WriteLine(string.Join(", ",nombre));
+        
+
+    }
+
+
 }
