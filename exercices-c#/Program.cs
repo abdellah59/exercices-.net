@@ -975,7 +975,7 @@ Console.WriteLine(CalculerPrixTTC(10));*/
 // Exercice 7 : Découverte des lambdas
 
 // 1.
-class Program
+/*class Program
 {
     static void Main(string[] args)
     {
@@ -984,22 +984,78 @@ class Program
     }
 
 
-}
+}*/
 
 //2. 
-class Program
+/*class Program
 {
     static void Main(string[] args)
     {
 
-        List<int> nombre = new List<int> { 1, 2, 3, 4, 5,6,7,8,9 };
+        List<int> nombre = new List<int> { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
 
         nombre.RemoveAll(x => x % 2 != 0);
 
-        Console.WriteLine(string.Join(", ",nombre));
-        
+        Console.WriteLine(string.Join(", ", nombre));
+
 
     }
 
 
-}
+}*/
+
+//Exercice 9.2 : Exercice pratique de synthèse
+
+/*class NotesUtil
+{
+    static double CalculerMoyenne(double totalPoints, int nombreNotes)
+    {
+        return totalPoints / nombreNotes;
+    }
+
+    static double CalculerMoyenne(int[] notes)
+    {
+        double total = 0;
+        foreach (int n in notes)
+        {
+            total += n;
+        }
+
+        return total / notes.Length;
+    }
+
+    string AfficherStats(int[] notes)
+    {
+
+        Console.WriteLine("\n--- Statistiques ---");
+        return ($"Valeur Max: {notes.Max()}\n" +
+                $"Valeur Min: {notes.Min()}\n" +
+                $"Valeur Moy: {notes.Average()}\n");
+    }
+
+    static void Main(string[] args)
+    {
+        *//*int[] notes = new int[] { 10, 20 };
+        double moyenne = CalculerMoyenne(notes);
+        Console.WriteLine($"Moyenne : {moyenne}");*//*
+
+        int nombre;
+        Console.WriteLine("Saisissez le nombre notes : ");
+        nombre = int.Parse(Console.ReadLine());
+        int[] notesSaisies = new int[nombre];
+
+        for (int i = 0; i < nombre; i++)
+        {
+            Console.WriteLine($"Saisissez la note {i + 1}: ");
+            notesSaisies[i] = int.Parse(Console.ReadLine());
+
+        }
+        double moyenne = CalculerMoyenne(notesSaisies);
+        Console.WriteLine($"Moyenne : {moyenne:F2}");
+
+        NotesUtil statistiques = new NotesUtil();
+        Console.WriteLine(statistiques.AfficherStats(notesSaisies));
+
+    }
+
+}*/
