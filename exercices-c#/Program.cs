@@ -64,7 +64,7 @@ poids = Convert.ToInt32(Console.ReadLine());
 if ((taille >= 145 && taille <= 169 && poids >= 43 && poids <= 47) ||
     (taille >= 145 && taille <= 166 && poids >= 48 && poids <= 53) ||
     (taille >= 145 && taille <= 163 && poids >= 54 && poids <= 59) ||
-    (taille >= 145 && taille <= 160 && poids >= 60 && poids <= 65) )
+    (taille >= 145 && taille <= 160 && poids >= 60 && poids <= 65))
 {
     Console.WriteLine("Prennez la taille 1.");
 }
@@ -85,8 +85,8 @@ else if ((taille >= 172 && taille <= 183 && poids >= 54 && poids <= 59) ||
 else
 {
     Console.WriteLine("Aucune taille ne vous correspond");
-}*/
-
+}
+*/
 // Exercice 9 : Gestion des notes partie 2
 
 /*int choix;
@@ -879,8 +879,8 @@ Console.WriteLine(EstPair(8));*/
 }
 Console.WriteLine(CalculerPrixTTC(10));*/
 
-//Exericice : Utiliser la surcharge de fonctions
-class Program
+//Exericice 3 : Utiliser la surcharge de fonctions
+/*class Program
 {
     static int Multiplier(int a, int b)
     {
@@ -911,6 +911,30 @@ class Program
         Console.WriteLine(Multiplier(2, 3, 4));
         int[] tableau = new int[] { 2, 3, 4, 5 };
         Console.WriteLine(Multiplier(tableau));
+
+    }
+}*/
+
+// Exercice 5 : Static ou instance ?
+
+class Program
+{
+    static void BonjourGlobal()
+    {
+        Console.WriteLine ("Bonjour tout le monde");
+    }
+
+    void BonjourPersonnalise(string prenom)
+    {
+        Console.WriteLine($"Bonjour {prenom}");
+    }
+
+
+    static void Main(string[] args)
+    {
+        BonjourGlobal();
+        Program program = new Program();
+        program.BonjourPersonnalise("Abdell") ;
 
     }
 }
