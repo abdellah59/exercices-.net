@@ -578,11 +578,34 @@ for (int i = 1; i <= nombre; i++)
     };
 };*/
 
-// Exercice 22.  Utiliser une boucle pour afficher chaque élément d'un tableau.
+// Exercice 23 : Utiliser une boucle pour afficher chaque élément d'un tableau.
 
-/*int [];
+/*int[] tableau = new int[] { 1, 2, 3, 4 };
 
-for (i = 0; i  */
+foreach (int n in tableau)
+{
+    Console.WriteLine(n);
+}*/
+
+// Exercice 24 : Demander à l'utilisateur un nombre de 1 à 10 et afficher la table de multiplication
+
+
+int nombre;
+
+Console.WriteLine("Saisissez un nombre entre 1 et 10 : ");
+while (!int.TryParse(Console.ReadLine(), out nombre) || nombre < 1 || nombre > 10)
+{
+    Console.WriteLine("Entrée invalide. Saisissez un nombre entre 1 et 10 :");
+}
+
+for (int i = 0; i < 10; i++)
+{
+    Console.WriteLine($"{i} x {nombre} = {i * nombre}");
+}
+
+
+
+
 
 
 // Exercice 31 . Utiliser une boucle `while` pour afficher les nombres de 1 à 10.
@@ -599,6 +622,8 @@ while (i <= nombre)
     i++; 
 
 };*/
+
+
 
 // Exercice 32. Utiliser une boucle `while` pour calculer la somme des nombres de 1 à 100.
 
@@ -648,8 +673,6 @@ switch (jour)
 
 }
 ;*/
-
-
 
 
 // Exercice cours  Les Collections en C# : 
@@ -1059,3 +1082,4 @@ Console.WriteLine(CalculerPrixTTC(10));*/
     }
 
 }*/
+
