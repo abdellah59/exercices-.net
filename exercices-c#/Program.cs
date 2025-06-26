@@ -589,8 +589,7 @@ foreach (int n in tableau)
 
 // Exercice 24 : Demander à l'utilisateur un nombre de 1 à 10 et afficher la table de multiplication
 
-
-int nombre;
+/*int nombre;
 
 Console.WriteLine("Saisissez un nombre entre 1 et 10 : ");
 while (!int.TryParse(Console.ReadLine(), out nombre) || nombre < 1 || nombre > 10)
@@ -601,11 +600,7 @@ while (!int.TryParse(Console.ReadLine(), out nombre) || nombre < 1 || nombre > 1
 for (int i = 0; i < 10; i++)
 {
     Console.WriteLine($"{i} x {nombre} = {i * nombre}");
-}
-
-
-
-
+}*/
 
 
 // Exercice 31 . Utiliser une boucle `while` pour afficher les nombres de 1 à 10.
@@ -622,7 +617,6 @@ while (i <= nombre)
     i++; 
 
 };*/
-
 
 
 // Exercice 32. Utiliser une boucle `while` pour calculer la somme des nombres de 1 à 100.
@@ -673,6 +667,69 @@ switch (jour)
 
 }
 ;*/
+
+// Exercice 51. Écrire un programme qui affiche la table de multiplication de 1 à 10 avec des boucles imbriquées.
+
+/*double multiplication;
+
+for (int nombre = 0; nombre <= 10; nombre++)
+{
+    Console.WriteLine($"Table de {nombre} :");
+
+    for (int i = 0; i <= 9; i++)
+    {
+        multiplication = nombre * i;
+
+        Console.WriteLine($"{i} x {nombre} = {i * nombre}");
+
+    }
+}*/
+
+
+// Exercice 52. Créer un programme qui affiche un rectangle de caractères "X" de taille donnée par l'utilisateur. Exemple, 4 donne : XXXX XXXX XXXX XXXX
+
+/*int taille;
+Console.Write("Saisissez la taille du rectangle : ");
+int.TryParse(Console.ReadLine(), out taille);
+
+for (int i = 1; i <= taille; i++)
+{
+    Console.WriteLine();
+
+    for ( i = 1; i <= taille; i++)
+    {
+        Console.WriteLine(new String('X', taille));
+    }
+}
+*/
+
+// Exercice 53. Utiliser des boucles imbriquées pour afficher une pyramide de nombres.
+
+string line = "";
+string pyramide = "";
+int number = 1;
+string userInput = "";
+int userInputInInt = 0;
+
+do
+{
+    Console.Write("Saisisser la taille de la pyramide : ");
+    userInput = Console.ReadLine();
+} while (!int.TryParse(userInput, out userInputInInt));
+
+for (int i = 0; i < userInputInInt; i++)
+{
+    for (int j = 0; j < i; j++)
+    {
+        line += $"{number} ";
+        number++;
+    }
+    pyramide += $"{line}\n";
+    line = "";
+}
+
+Console.WriteLine(pyramide);
+
 
 
 // Exercice cours  Les Collections en C# : 
